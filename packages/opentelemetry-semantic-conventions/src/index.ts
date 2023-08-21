@@ -14,5 +14,5 @@
  * limitations under the License.
  */
 
-export * from './trace';
-export * from './resource';
+export * from './trace/index.ts';
+export * from './resource/index.ts';
