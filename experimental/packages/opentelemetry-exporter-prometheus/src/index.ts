@@ -14,6 +14,6 @@
  * limitations under the License.
  */
 
-export * from './PrometheusExporter';
-export * from './PrometheusSerializer';
-export * from './export/types';
+export * from './PrometheusExporter.ts';
+export * from './PrometheusSerializer.ts';
+export * from './export/types.ts';

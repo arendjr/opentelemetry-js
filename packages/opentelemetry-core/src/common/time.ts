@@ -15,8 +15,8 @@
  */
 
 import * as api from '@opentelemetry/api';
-import { otperformance as performance } from '../platform';
-import { TimeOriginLegacy } from './types';
+import { otperformance as performance } from '../platform/index.ts';
+import { TimeOriginLegacy } from './types.ts';
 
 const NANOSECOND_DIGITS = 9;
 const NANOSECOND_DIGITS_IN_MILLIS = 6;

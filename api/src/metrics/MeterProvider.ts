@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-import { Meter, MeterOptions } from './Meter';
+import { Meter, MeterOptions } from './Meter.ts';
 
 /**
  * A registry for creating named {@link Meter}s.

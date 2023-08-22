@@ -14,36 +14,35 @@
  * limitations under the License.
  */
 
-export * from './baggage/propagation/W3CBaggagePropagator';
-export * from './common/anchored-clock';
-export * from './common/attributes';
-export * from './common/global-error-handler';
-export * from './common/logging-error-handler';
-export * from './common/time';
-export * from './common/types';
-export * from './ExportResult';
-export * from './version';
-export * as baggageUtils from './baggage/utils';
-export * from './platform';
-export * from './propagation/composite';
-export * from './trace/W3CTraceContextPropagator';
-export * from './trace/IdGenerator';
-export * from './trace/rpc-metadata';
-export * from './trace/sampler/AlwaysOffSampler';
-export * from './trace/sampler/AlwaysOnSampler';
-export * from './trace/sampler/ParentBasedSampler';
-export * from './trace/sampler/TraceIdRatioBasedSampler';
-export * from './trace/suppress-tracing';
-export * from './trace/TraceState';
-export * from './utils/environment';
-export * from './utils/merge';
-export * from './utils/sampling';
-export * from './utils/timeout';
-export * from './utils/url';
-export * from './utils/wrap';
-export * from './utils/callback';
-export * from './version';
-import { _export } from './internal/exporter';
+export * from './baggage/propagation/W3CBaggagePropagator.ts';
+export * from './common/anchored-clock.ts';
+export * from './common/attributes.ts';
+export * from './common/global-error-handler.ts';
+export * from './common/logging-error-handler.ts';
+export * from './common/time.ts';
+export * from './common/types.ts';
+export * from './ExportResult.ts';
+export * from './version.ts';
+export * as baggageUtils from './baggage/utils.ts';
+export * from './platform/index.ts';
+export * from './propagation/composite.ts';
+export * from './trace/W3CTraceContextPropagator.ts';
+export * from './trace/IdGenerator.ts';
+export * from './trace/rpc-metadata.ts';
+export * from './trace/sampler/AlwaysOffSampler.ts';
+export * from './trace/sampler/AlwaysOnSampler.ts';
+export * from './trace/sampler/ParentBasedSampler.ts';
+export * from './trace/sampler/TraceIdRatioBasedSampler.ts';
+export * from './trace/suppress-tracing.ts';
+export * from './trace/TraceState.ts';
+export * from './utils/environment.ts';
+export * from './utils/merge.ts';
+export * from './utils/sampling.ts';
+export * from './utils/timeout.ts';
+export * from './utils/url.ts';
+export * from './utils/wrap.ts';
+export * from './utils/callback.ts';
+import { _export } from './internal/exporter.ts';
 export const internal = {
   _export,
 };

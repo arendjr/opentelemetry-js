@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-import { MetricAttributes, Observable } from './Metric';
+import { MetricAttributes, Observable } from './Metric.ts';
 
 /**
  * Interface that is being used in callback function for Observable Metric.

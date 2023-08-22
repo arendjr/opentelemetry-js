@@ -14,10 +14,10 @@
  * limitations under the License.
  */
 
-import { ContextAPI } from '../api/context';
-import { createContextKey } from '../context/context';
-import { Context } from '../context/types';
-import { Baggage } from './types';
+import { ContextAPI } from '../api/context.ts';
+import { createContextKey } from '../context/context.ts';
+import { Context } from '../context/types.ts';
+import { Baggage } from './types.ts';
 
 /**
  * Baggage key

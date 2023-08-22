@@ -14,10 +14,10 @@
  * limitations under the License.
  */
 
-import { NoopTracer } from './NoopTracer';
-import { Tracer } from './tracer';
-import { TracerOptions } from './tracer_options';
-import { TracerProvider } from './tracer_provider';
+import { NoopTracer } from './NoopTracer.ts';
+import { Tracer } from './tracer.ts';
+import { TracerOptions } from './tracer_options.ts';
+import { TracerProvider } from './tracer_provider.ts';
 
 /**
  * An implementation of the {@link TracerProvider} which returns an impotent

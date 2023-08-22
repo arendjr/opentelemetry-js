@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-import { DiagLogger, DiagLogFunction } from './types';
+import { DiagLogger, DiagLogFunction } from './types.ts';
 
 type ConsoleMapKeys = 'error' | 'warn' | 'info' | 'debug' | 'trace';
 const consoleMap: { n: keyof DiagLogger; c: ConsoleMapKeys }[] = [

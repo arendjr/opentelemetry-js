@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-import type { Baggage, BaggageEntry } from '../types';
+import type { Baggage, BaggageEntry } from '../types.ts';
 
 export class BaggageImpl implements Baggage {
   private _entries: Map<string, BaggageEntry>;

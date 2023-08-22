@@ -14,8 +14,8 @@
  * limitations under the License.
  */
 
-import { SpanAttributes } from './attributes';
-import { SpanContext } from './span_context';
+import { SpanAttributes } from './attributes.ts';
+import { SpanContext } from './span_context.ts';
 
 /**
  * A pointer from the current {@link Span} to another span in the same trace or

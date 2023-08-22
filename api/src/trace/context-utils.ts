@@ -14,12 +14,12 @@
  * limitations under the License.
  */
 
-import { createContextKey } from '../context/context';
-import { Context } from '../context/types';
-import { Span } from './span';
-import { SpanContext } from './span_context';
-import { NonRecordingSpan } from './NonRecordingSpan';
-import { ContextAPI } from '../api/context';
+import { createContextKey } from '../context/context.ts';
+import { Context } from '../context/types.ts';
+import { Span } from './span.ts';
+import { SpanContext } from './span_context.ts';
+import { NonRecordingSpan } from './NonRecordingSpan.ts';
+import { ContextAPI } from '../api/context.ts';
 
 /**
  * span key

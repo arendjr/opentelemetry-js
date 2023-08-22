@@ -14,9 +14,9 @@
  * limitations under the License.
  */
 
-import { Attributes, AttributeValue } from '../common/Attributes';
-import { Context } from '../context/types';
-import { BatchObservableResult, ObservableResult } from './ObservableResult';
+import { Attributes, AttributeValue } from '../common/Attributes.ts';
+import { Context } from '../context/types.ts';
+import { BatchObservableResult, ObservableResult } from './ObservableResult.ts';
 
 /**
  * Options needed for metric creation

@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-import { Context } from '../context/types';
+import { Context } from '../context/types.ts';
 
 /**
  * Injects `Context` into and extracts it from carriers that travel

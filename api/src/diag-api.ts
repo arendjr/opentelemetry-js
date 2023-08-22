@@ -16,7 +16,7 @@
 
 // Split module-level variable definition into separate files to allow
 // tree-shaking on each api instance.
-import { DiagAPI } from './api/diag';
+import { DiagAPI } from './api/diag.ts';
 /**
  * Entrypoint for Diag API.
  * Defines Diagnostic handler used for internal diagnostic logging operations.

@@ -21,11 +21,11 @@ import {
   AggregationTemporality,
   MetricReader,
 } from '@opentelemetry/sdk-metrics';
-import { createServer, IncomingMessage, Server, ServerResponse } from 'http';
-import { ExporterConfig } from './export/types';
-import { PrometheusSerializer } from './PrometheusSerializer';
+import { createServer, IncomingMessage, Server, ServerResponse } from 'node:http';
+import { ExporterConfig } from './export/types.ts';
+import { PrometheusSerializer } from './PrometheusSerializer.ts';
 /** Node.js v8.x compat */
-import { URL } from 'url';
+import { URL } from 'node:url';
 
 export class PrometheusExporter extends MetricReader {
   static readonly DEFAULT_OPTIONS = {

@@ -14,8 +14,8 @@
  * limitations under the License.
  */
 
-import { SpanAttributes } from './attributes';
-import { TraceState } from './trace_state';
+import { SpanAttributes } from './attributes.ts';
+import { TraceState } from './trace_state.ts';
 
 /**
  * @deprecated use the one declared in @opentelemetry/sdk-trace-base instead.

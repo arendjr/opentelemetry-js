@@ -14,8 +14,8 @@
  * limitations under the License.
  */
 
-import { getGlobal } from '../internal/global-utils';
-import { ComponentLoggerOptions, DiagLogger, DiagLogFunction } from './types';
+import { getGlobal } from '../internal/global-utils.ts';
+import { ComponentLoggerOptions, DiagLogger, DiagLogFunction } from './types.ts';
 
 /**
  * Component Logger which is meant to be used as part of any component which

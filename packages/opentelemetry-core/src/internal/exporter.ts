@@ -15,8 +15,8 @@
  */
 
 import { context } from '@opentelemetry/api';
-import { ExportResult } from '../ExportResult';
-import { suppressTracing } from '../trace/suppress-tracing';
+import { ExportResult } from '../ExportResult.ts';
+import { suppressTracing } from '../trace/suppress-tracing.ts';
 
 export interface Exporter<T> {
   export(arg: T, resultCallback: (result: ExportResult) => void): void;

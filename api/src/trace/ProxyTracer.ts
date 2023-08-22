@@ -14,12 +14,12 @@
  * limitations under the License.
  */
 
-import { Context } from '../context/types';
-import { NoopTracer } from './NoopTracer';
-import { Span } from './span';
-import { SpanOptions } from './SpanOptions';
-import { Tracer } from './tracer';
-import { TracerOptions } from './tracer_options';
+import { Context } from '../context/types.ts';
+import { NoopTracer } from './NoopTracer.ts';
+import { Span } from './span.ts';
+import { SpanOptions } from './SpanOptions.ts';
+import { Tracer } from './tracer.ts';
+import { TracerOptions } from './tracer_options.ts';
 
 const NOOP_TRACER = new NoopTracer();
 

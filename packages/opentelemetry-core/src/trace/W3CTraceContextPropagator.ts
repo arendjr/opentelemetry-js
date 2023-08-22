@@ -24,8 +24,8 @@ import {
   trace,
   TraceFlags,
 } from '@opentelemetry/api';
-import { isTracingSuppressed } from './suppress-tracing';
-import { TraceState } from './TraceState';
+import { isTracingSuppressed } from './suppress-tracing.ts';
+import { TraceState } from './TraceState.ts`';
 
 export const TRACE_PARENT_HEADER = 'traceparent';
 export const TRACE_STATE_HEADER = 'tracestate';

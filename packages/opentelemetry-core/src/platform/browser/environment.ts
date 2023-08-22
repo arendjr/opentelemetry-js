@@ -19,8 +19,8 @@ import {
   ENVIRONMENT,
   RAW_ENVIRONMENT,
   parseEnvironment,
-} from '../../utils/environment';
-import { _globalThis } from './globalThis';
+} from '../../utils/environment.ts';
+import { _globalThis } from './globalThis.ts';
 
 /**
  * Gets the environment variables

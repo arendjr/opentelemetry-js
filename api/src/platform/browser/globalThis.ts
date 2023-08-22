@@ -33,6 +33,8 @@ export const _globalThis: typeof globalThis =
     ? self
     : typeof window === 'object'
     ? window
+    // @ts-ignore
     : typeof global === 'object'
+    // @ts-ignore
     ? global
     : ({} as typeof globalThis);

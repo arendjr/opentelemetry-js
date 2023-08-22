@@ -16,6 +16,6 @@
 
 // Split module-level variable definition into separate files to allow
 // tree-shaking on each api instance.
-import { PropagationAPI } from './api/propagation';
+import { PropagationAPI } from './api/propagation.ts';
 /** Entrypoint for propagation API */
 export const propagation = PropagationAPI.getInstance();

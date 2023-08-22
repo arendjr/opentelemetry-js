@@ -14,9 +14,9 @@
  * limitations under the License.
  */
 
-import { Context } from '../context/types';
-import { Span } from './span';
-import { SpanOptions } from './SpanOptions';
+import { Context } from '../context/types.ts';
+import { Span } from './span.ts';
+import { SpanOptions } from './SpanOptions.ts';
 
 /**
  * Tracer provides an interface for creating {@link Span}s.

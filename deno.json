@@ -1,0 +1,9 @@
+{
+    "imports": {
+        "@opentelemetry/api": "https://deno.land/x/opentelemetry_semantic_conventions@1.15.2/mod.ts",
+        "@opentelemetry/core": "https://deno.land/x/opentelemetry_core@1.15.2/mod.ts",
+        "@opentelemetry/resources": "https://deno.land/x/opentelemetry_resources@1.15.2/mod.ts",
+        "@opentelemetry/sdk-metrics": "https://deno.land/x/opentelemetry_sdk_metrics@1.15.2/mod.ts",
+        "@opentelemetry/semantic-conventions": "https://deno.land/x/opentelemetry_semantic_conventions@1.15.2/mod.ts"
+    }
+}

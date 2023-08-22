@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-import { VERSION } from '../../version';
+import { VERSION } from '../../version.ts';
 import {
   TelemetrySdkLanguageValues,
   SemanticResourceAttributes,

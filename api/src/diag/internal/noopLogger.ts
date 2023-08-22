@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-import { DiagLogger } from '../types';
+import { DiagLogger } from '../types.ts';
 
 function noopLogFunction() {}
 

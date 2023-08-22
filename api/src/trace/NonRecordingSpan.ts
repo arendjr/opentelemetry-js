@@ -14,13 +14,13 @@
  * limitations under the License.
  */
 
-import { Exception } from '../common/Exception';
-import { TimeInput } from '../common/Time';
-import { SpanAttributes } from './attributes';
-import { INVALID_SPAN_CONTEXT } from './invalid-span-constants';
-import { Span } from './span';
-import { SpanContext } from './span_context';
-import { SpanStatus } from './status';
+import { Exception } from '../common/Exception.ts';
+import { TimeInput } from '../common/Time.ts';
+import { SpanAttributes } from './attributes.ts';
+import { INVALID_SPAN_CONTEXT } from './invalid-span-constants.ts';
+import { Span } from './span.ts';
+import { SpanContext } from './span_context.ts';
+import { SpanStatus } from './status.ts';
 
 /**
  * The NonRecordingSpan is the default {@link Span} that is used when no Span
