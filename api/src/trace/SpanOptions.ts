@@ -14,10 +14,10 @@
  * limitations under the License.
  */
 
-import { TimeInput } from '../common/Time';
-import { SpanAttributes } from './attributes';
-import { Link } from './link';
-import { SpanKind } from './span_kind';
+import { TimeInput } from '../common/Time.ts';
+import { SpanAttributes } from './attributes.ts';
+import { Link } from './link.ts';
+import { SpanKind } from './span_kind.ts';
 
 /**
  * Options needed for span creation

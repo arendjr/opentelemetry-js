@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-import { Attributes, AttributeValue } from '../common/Attributes';
+import { Attributes, AttributeValue } from '../common/Attributes.ts';
 
 /**
  * @deprecated please use {@link Attributes}

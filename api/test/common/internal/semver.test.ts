@@ -14,12 +14,12 @@
  * limitations under the License.
  */
 
-import * as assert from 'assert';
+import * as assert from 'node:assert';
 import {
   isCompatible,
   _makeCompatibilityCheck,
-} from '../../../src/internal/semver';
-import { VERSION } from '../../../src/version';
+} from '../../../src/internal/semver.ts';
+import { VERSION } from '../../../src/version.ts';
 
 describe('semver', () => {
   it('should be compatible if versions are equal', () => {

@@ -3,7 +3,10 @@
   "compilerOptions": {
     "outDir": "build/esnext",
     "rootDir": "src",
-    "tsBuildInfoFile": "build/esnext/tsconfig.esnext.tsbuildinfo"
+    "tsBuildInfoFile": "build/esnext/tsconfig.esnext.tsbuildinfo",
+    "allowImportingTsExtensions": true,
+    "moduleResolution": "bundler",
+    "noEmit": true
   },
   "include": [
     "src/**/*.ts"

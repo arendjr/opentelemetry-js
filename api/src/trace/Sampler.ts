@@ -14,11 +14,11 @@
  * limitations under the License.
  */
 
-import { Context } from '../context/types';
-import { SpanAttributes } from './attributes';
-import { Link } from './link';
-import { SamplingResult } from './SamplingResult';
-import { SpanKind } from './span_kind';
+import { Context } from '../context/types.ts';
+import { SpanAttributes } from './attributes.ts';
+import { Link } from './link.ts';
+import { SamplingResult } from './SamplingResult.ts';
+import { SpanKind } from './span_kind.ts';
 
 /**
  * @deprecated use the one declared in @opentelemetry/sdk-trace-base instead.

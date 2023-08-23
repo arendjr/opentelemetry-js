@@ -14,8 +14,8 @@
  * limitations under the License.
  */
 
-import * as assert from 'assert';
-import { VERSION } from '../../../src/version';
+import * as assert from 'node:assert';
+import { VERSION } from '../../../src/version.ts';
 
 describe('version', () => {
   it('should have generated VERSION.ts', () => {

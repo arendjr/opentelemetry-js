@@ -14,9 +14,9 @@
  * limitations under the License.
  */
 
-import * as assert from 'assert';
+import * as assert from 'node:assert';
 import * as sinon from 'sinon';
-import { diag, DiagLogger, DiagLogLevel } from '../../../src';
+import { diag, DiagLogger, DiagLogLevel } from '../../../src/index.ts';
 
 class SpyLogger implements DiagLogger {
   debug() {}

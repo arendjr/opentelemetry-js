@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-import * as assert from 'assert';
+import * as assert from 'node:assert';
 import * as webpack from 'webpack';
 import * as path from 'path';
 import { Union } from 'unionfs';
@@ -58,7 +58,7 @@ describe('tree-shaking', () => {
   for (const testAPI of testAPIs) {
     it(`verify ${testAPI.name}`, async () => {
       const sourceCode = `
-        import { ${testAPI.export} } from '../../';
+        import { ${testAPI.export} } from '../../.ts';
         console.log(${testAPI.export});
       `;
       mfs.mkdirpSync(path.dirname(sourceCodePath));

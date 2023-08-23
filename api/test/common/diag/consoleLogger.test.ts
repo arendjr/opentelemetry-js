@@ -16,8 +16,8 @@
 
 /* eslint-disable no-console */
 
-import * as assert from 'assert';
-import { DiagConsoleLogger } from '../../../src/diag/consoleLogger';
+import * as assert from 'node:assert';
+import { DiagConsoleLogger } from '../../../src/diag/consoleLogger.ts';
 
 export const diagLoggerFunctions = [
   'verbose',

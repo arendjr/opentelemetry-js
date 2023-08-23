@@ -14,11 +14,11 @@
  * limitations under the License.
  */
 
-import { Tracer } from './tracer';
-import { TracerProvider } from './tracer_provider';
-import { ProxyTracer } from './ProxyTracer';
-import { NoopTracerProvider } from './NoopTracerProvider';
-import { TracerOptions } from './tracer_options';
+import { Tracer } from './tracer.ts';
+import { TracerProvider } from './tracer_provider.ts';
+import { ProxyTracer } from './ProxyTracer.ts';
+import { NoopTracerProvider } from './NoopTracerProvider.ts';
+import { TracerOptions } from './tracer_options.ts';
 
 const NOOP_TRACER_PROVIDER = new NoopTracerProvider();
 

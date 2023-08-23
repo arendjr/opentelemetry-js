@@ -18,14 +18,14 @@ import {
   getGlobal,
   registerGlobal,
   unregisterGlobal,
-} from '../internal/global-utils';
-import { ProxyTracerProvider } from '../trace/ProxyTracerProvider';
+} from '../internal/global-utils.ts';
+import { ProxyTracerProvider } from '../trace/ProxyTracerProvider.ts';
 import {
   isSpanContextValid,
   wrapSpanContext,
-} from '../trace/spancontext-utils';
-import { Tracer } from '../trace/tracer';
-import { TracerProvider } from '../trace/tracer_provider';
+} from '../trace/spancontext-utils.ts';
+import { Tracer } from '../trace/tracer.ts';
+import { TracerProvider } from '../trace/tracer_provider.ts';
 import {
   deleteSpan,
   getActiveSpan,
@@ -33,8 +33,8 @@ import {
   getSpanContext,
   setSpan,
   setSpanContext,
-} from '../trace/context-utils';
-import { DiagAPI } from './diag';
+} from '../trace/context-utils.ts';
+import { DiagAPI } from './diag.ts';
 
 const API_NAME = 'trace';
 

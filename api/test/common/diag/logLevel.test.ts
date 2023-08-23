@@ -14,11 +14,11 @@
  * limitations under the License.
  */
 
-import * as assert from 'assert';
-import { diag } from '../../../src';
-import { createLogLevelDiagLogger } from '../../../src/diag/internal/logLevelLogger';
-import { createNoopDiagLogger } from '../../../src/diag/internal/noopLogger';
-import { DiagLogger, DiagLogLevel } from '../../../src/diag/types';
+import * as assert from 'node:assert';
+import { diag } from '../../../src/index.ts';
+import { createLogLevelDiagLogger } from '../../../src/diag/internal/logLevelLogger.ts';
+import { createNoopDiagLogger } from '../../../src/diag/internal/noopLogger.ts';
+import { DiagLogger, DiagLogLevel } from '../../../src/diag/types.ts';
 
 // Matches the previous Logger definition
 const incompleteLoggerFuncs = ['debug', 'info', 'warn', 'error'] as const;

@@ -14,28 +14,28 @@
  * limitations under the License.
  */
 
-import { Context } from '../context/types';
+import { Context } from '../context/types.ts';
 import {
   getGlobal,
   registerGlobal,
   unregisterGlobal,
-} from '../internal/global-utils';
-import { NoopTextMapPropagator } from '../propagation/NoopTextMapPropagator';
+} from '../internal/global-utils.ts';
+import { NoopTextMapPropagator } from '../propagation/NoopTextMapPropagator.ts';
 import {
   defaultTextMapGetter,
   defaultTextMapSetter,
   TextMapGetter,
   TextMapPropagator,
   TextMapSetter,
-} from '../propagation/TextMapPropagator';
+} from '../propagation/TextMapPropagator.ts';
 import {
   getBaggage,
   getActiveBaggage,
   setBaggage,
   deleteBaggage,
-} from '../baggage/context-helpers';
-import { createBaggage } from '../baggage/utils';
-import { DiagAPI } from './diag';
+} from '../baggage/context-helpers.ts';
+import { createBaggage } from '../baggage/utils.ts';
+import { DiagAPI } from './diag.ts';
 
 const API_NAME = 'propagation';
 const NOOP_TEXT_MAP_PROPAGATOR = new NoopTextMapPropagator();

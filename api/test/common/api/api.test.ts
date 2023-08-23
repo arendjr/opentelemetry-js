@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-import * as assert from 'assert';
+import * as assert from 'node:assert';
 import api, {
   context,
   Context,
@@ -31,13 +31,13 @@ import api, {
   TextMapSetter,
   trace,
   TraceFlags,
-} from '../../../src';
-import { DiagAPI } from '../../../src/api/diag';
-import { NoopMeter } from '../../../src/metrics/NoopMeter';
-import { NoopMeterProvider } from '../../../src/metrics/NoopMeterProvider';
-import { NonRecordingSpan } from '../../../src/trace/NonRecordingSpan';
-import { NoopTracer } from '../../../src/trace/NoopTracer';
-import { NoopTracerProvider } from '../../../src/trace/NoopTracerProvider';
+} from '../../../src/index.ts';
+import { DiagAPI } from '../../../src/api/diag.ts';
+import { NoopMeter } from '../../../src/metrics/NoopMeter.ts';
+import { NoopMeterProvider } from '../../../src/metrics/NoopMeterProvider.ts';
+import { NonRecordingSpan } from '../../../src/trace/NonRecordingSpan.ts';
+import { NoopTracer } from '../../../src/trace/NoopTracer.ts';
+import { NoopTracerProvider } from '../../../src/trace/NoopTracerProvider.ts';
 
 // DiagLogger implementation
 const diagLoggerFunctions = [

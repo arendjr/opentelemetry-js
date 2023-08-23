@@ -14,8 +14,8 @@
  * limitations under the License.
  */
 
-import { SpanContext } from './span_context';
-import { TraceFlags } from './trace_flags';
+import { SpanContext } from './span_context.ts';
+import { TraceFlags } from './trace_flags.ts';
 
 export const INVALID_SPANID = '0000000000000000';
 export const INVALID_TRACEID = '00000000000000000000000000000000';

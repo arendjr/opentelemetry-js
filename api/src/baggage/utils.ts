@@ -14,10 +14,10 @@
  * limitations under the License.
  */
 
-import { DiagAPI } from '../api/diag';
-import { BaggageImpl } from './internal/baggage-impl';
-import { baggageEntryMetadataSymbol } from './internal/symbol';
-import { Baggage, BaggageEntry, BaggageEntryMetadata } from './types';
+import { DiagAPI } from '../api/diag.ts';
+import { BaggageImpl } from './internal/baggage-impl.ts';
+import { baggageEntryMetadataSymbol } from './internal/symbol.ts';
+import { Baggage, BaggageEntry, BaggageEntryMetadata } from './types.ts';
 
 const diag = DiagAPI.instance();
 

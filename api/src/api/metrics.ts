@@ -14,15 +14,15 @@
  * limitations under the License.
  */
 
-import { Meter, MeterOptions } from '../metrics/Meter';
-import { MeterProvider } from '../metrics/MeterProvider';
-import { NOOP_METER_PROVIDER } from '../metrics/NoopMeterProvider';
+import { Meter, MeterOptions } from '../metrics/Meter.ts';
+import { MeterProvider } from '../metrics/MeterProvider.ts';
+import { NOOP_METER_PROVIDER } from '../metrics/NoopMeterProvider.ts';
 import {
   getGlobal,
   registerGlobal,
   unregisterGlobal,
-} from '../internal/global-utils';
-import { DiagAPI } from './diag';
+} from '../internal/global-utils.ts';
+import { DiagAPI } from './diag.ts';
 
 const API_NAME = 'metrics';
 

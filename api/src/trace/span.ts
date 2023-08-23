@@ -14,11 +14,11 @@
  * limitations under the License.
  */
 
-import { Exception } from '../common/Exception';
-import { TimeInput } from '../common/Time';
-import { SpanAttributes, SpanAttributeValue } from './attributes';
-import { SpanContext } from './span_context';
-import { SpanStatus } from './status';
+import { Exception } from '../common/Exception.ts';
+import { TimeInput } from '../common/Time.ts';
+import { SpanAttributes, SpanAttributeValue } from './attributes.ts';
+import { SpanContext } from './span_context.ts';
+import { SpanStatus } from './status.ts';
 
 /**
  * An interface that represents a span. A span represents a single operation

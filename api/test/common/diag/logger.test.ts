@@ -14,11 +14,11 @@
  * limitations under the License.
  */
 
-import * as assert from 'assert';
+import * as assert from 'node:assert';
 import sinon = require('sinon');
-import { diag, DiagLogLevel } from '../../../src';
-import { createNoopDiagLogger } from '../../../src/diag/internal/noopLogger';
-import { DiagLogger } from '../../../src/diag/types';
+import { diag, DiagLogLevel } from '../../../src/index.ts';
+import { createNoopDiagLogger } from '../../../src/diag/internal/noopLogger.ts';
+import { DiagLogger } from '../../../src/diag/types.ts';
 
 export const diagLoggerFunctions = [
   'verbose',

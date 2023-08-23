@@ -25,7 +25,7 @@ import {
   ObservableGauge,
   ObservableUpDownCounter,
   UpDownCounter,
-} from './Metric';
+} from './Metric.ts';
 
 /**
  * An interface describes additional metadata of a meter.

@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-import * as assert from 'assert';
+import * as assert from 'node:assert';
 import * as sinon from 'sinon';
 import {
   context,
@@ -26,9 +26,9 @@ import {
   SpanOptions,
   Tracer,
   TracerProvider,
-} from '../../../src';
-import { NonRecordingSpan } from '../../../src/trace/NonRecordingSpan';
-import { NoopTracer } from '../../../src/trace/NoopTracer';
+} from '../../../src/index.ts';
+import { NonRecordingSpan } from '../../../src/trace/NonRecordingSpan.ts';
+import { NoopTracer } from '../../../src/trace/NoopTracer.ts';
 
 describe('ProxyTracer', () => {
   let provider: ProxyTracerProvider;

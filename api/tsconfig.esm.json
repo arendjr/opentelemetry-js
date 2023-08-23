@@ -3,7 +3,10 @@
   "compilerOptions": {
     "outDir": "build/esm",
     "rootDir": "src",
-    "tsBuildInfoFile": "build/esm/tsconfig.esm.tsbuildinfo"
+    "tsBuildInfoFile": "build/esm/tsconfig.esm.tsbuildinfo",
+    "allowImportingTsExtensions": true,
+    "moduleResolution": "bundler",
+    "noEmit": true
   },
   "include": [
     "src/**/*.ts"

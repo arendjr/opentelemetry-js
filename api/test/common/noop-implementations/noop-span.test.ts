@@ -14,14 +14,14 @@
  * limitations under the License.
  */
 
-import * as assert from 'assert';
+import * as assert from 'node:assert';
 import {
   SpanStatusCode,
   INVALID_SPANID,
   INVALID_TRACEID,
   TraceFlags,
-} from '../../../src';
-import { NonRecordingSpan } from '../../../src/trace/NonRecordingSpan';
+} from '../../../src/index.ts';
+import { NonRecordingSpan } from '../../../src/trace/NonRecordingSpan.ts';
 
 describe('NonRecordingSpan', () => {
   it('do not crash', () => {

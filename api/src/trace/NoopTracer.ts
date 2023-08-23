@@ -14,15 +14,15 @@
  * limitations under the License.
  */
 
-import { ContextAPI } from '../api/context';
-import { Context } from '../context/types';
-import { getSpanContext, setSpan } from '../trace/context-utils';
-import { NonRecordingSpan } from './NonRecordingSpan';
-import { Span } from './span';
-import { isSpanContextValid } from './spancontext-utils';
-import { SpanOptions } from './SpanOptions';
-import { SpanContext } from './span_context';
-import { Tracer } from './tracer';
+import { ContextAPI } from '../api/context.ts';
+import { Context } from '../context/types.ts';
+import { getSpanContext, setSpan } from '../trace/context-utils.ts';
+import { NonRecordingSpan } from './NonRecordingSpan.ts';
+import { Span } from './span.ts';
+import { isSpanContextValid } from './spancontext-utils.ts';
+import { SpanOptions } from './SpanOptions.ts';
+import { SpanContext } from './span_context.ts';
+import { Tracer } from './tracer.ts';
 
 const contextApi = ContextAPI.getInstance();
 

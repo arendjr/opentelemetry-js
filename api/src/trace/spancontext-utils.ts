@@ -13,10 +13,10 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-import { INVALID_SPANID, INVALID_TRACEID } from './invalid-span-constants';
-import { NonRecordingSpan } from './NonRecordingSpan';
-import { Span } from './span';
-import { SpanContext } from './span_context';
+import { INVALID_SPANID, INVALID_TRACEID } from './invalid-span-constants.ts';
+import { NonRecordingSpan } from './NonRecordingSpan.ts';
+import { Span } from './span.ts';
+import { SpanContext } from './span_context.ts';
 
 const VALID_TRACEID_REGEX = /^([0-9a-f]{32})$/i;
 const VALID_SPANID_REGEX = /^[0-9a-f]{16}$/i;

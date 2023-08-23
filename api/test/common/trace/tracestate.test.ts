@@ -14,9 +14,9 @@
  * limitations under the License.
  */
 
-import * as assert from 'assert';
-import { createTraceState } from '../../../src/trace/internal/utils';
-import { TraceStateImpl } from '../../../src/trace/internal/tracestate-impl';
+import * as assert from 'node:assert';
+import { createTraceState } from '../../../src/trace/internal/utils.ts';
+import { TraceStateImpl } from '../../../src/trace/internal/tracestate-impl.ts';
 
 describe('TraceState', () => {
   describe('.serialize()', () => {

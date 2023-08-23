@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-import * as assert from 'assert';
+import * as assert from 'node:assert';
 import {
   NoopMeter,
   NOOP_COUNTER_METRIC,
@@ -24,8 +24,8 @@ import {
   NOOP_OBSERVABLE_UP_DOWN_COUNTER_METRIC,
   NOOP_UP_DOWN_COUNTER_METRIC,
   createNoopMeter,
-} from '../../../src/metrics/NoopMeter';
-import { NoopMeterProvider } from '../../../src/metrics/NoopMeterProvider';
+} from '../../../src/metrics/NoopMeter.ts';
+import { NoopMeterProvider } from '../../../src/metrics/NoopMeterProvider.ts';
 
 const attributes = {};
 const options = {

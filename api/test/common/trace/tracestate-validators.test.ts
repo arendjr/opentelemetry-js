@@ -14,11 +14,11 @@
  * limitations under the License.
  */
 
-import * as assert from 'assert';
+import * as assert from 'node:assert';
 import {
   validateKey,
   validateValue,
-} from '../../../src/trace/internal/tracestate-validators';
+} from '../../../src/trace/internal/tracestate-validators.ts';
 
 describe('validators', () => {
   describe('validateKey', () => {

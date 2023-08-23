@@ -14,13 +14,13 @@
  * limitations under the License.
  */
 
-import * as assert from 'assert';
+import * as assert from 'node:assert';
 import {
   context,
   ROOT_CONTEXT,
   propagation,
   baggageEntryMetadataFromString,
-} from '../../../src';
+} from '../../../src/index.ts';
 
 describe('Baggage', () => {
   describe('create', () => {

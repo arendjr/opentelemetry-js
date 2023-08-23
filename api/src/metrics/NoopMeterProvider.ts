@@ -14,9 +14,9 @@
  * limitations under the License.
  */
 
-import { Meter, MeterOptions } from './Meter';
-import { MeterProvider } from './MeterProvider';
-import { NOOP_METER } from './NoopMeter';
+import { Meter, MeterOptions } from './Meter.ts';
+import { MeterProvider } from './MeterProvider.ts';
+import { NOOP_METER } from './NoopMeter.ts';
 
 /**
  * An implementation of the {@link MeterProvider} which returns an impotent Meter

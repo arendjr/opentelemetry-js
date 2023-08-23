@@ -14,32 +14,32 @@
  * limitations under the License.
  */
 
-export { BaggageEntry, BaggageEntryMetadata, Baggage } from './baggage/types';
-export { baggageEntryMetadataFromString } from './baggage/utils';
-export { Exception } from './common/Exception';
-export { HrTime, TimeInput } from './common/Time';
-export { Attributes, AttributeValue } from './common/Attributes';
+export { BaggageEntry, BaggageEntryMetadata, Baggage } from './baggage/types.ts';
+export { baggageEntryMetadataFromString } from './baggage/utils.ts';
+export { Exception } from './common/Exception.ts';
+export { HrTime, TimeInput } from './common/Time.ts';
+export { Attributes, AttributeValue } from './common/Attributes.ts';
 
 // Context APIs
-export { createContextKey, ROOT_CONTEXT } from './context/context';
-export { Context, ContextManager } from './context/types';
-export type { ContextAPI } from './api/context';
+export { createContextKey, ROOT_CONTEXT } from './context/context.ts';
+export { Context, ContextManager } from './context/types.ts';
+export type { ContextAPI } from './api/context.ts';
 
 // Diag APIs
-export { DiagConsoleLogger } from './diag/consoleLogger';
+export { DiagConsoleLogger } from './diag/consoleLogger.ts';
 export {
   DiagLogFunction,
   DiagLogger,
   DiagLogLevel,
   ComponentLoggerOptions,
   DiagLoggerOptions,
-} from './diag/types';
-export type { DiagAPI } from './api/diag';
+} from './diag/types.ts';
+export type { DiagAPI } from './api/diag.ts';
 
 // Metrics APIs
-export { createNoopMeter } from './metrics/NoopMeter';
-export { MeterOptions, Meter } from './metrics/Meter';
-export { MeterProvider } from './metrics/MeterProvider';
+export { createNoopMeter } from './metrics/NoopMeter.ts';
+export { MeterOptions, Meter } from './metrics/Meter.ts';
+export { MeterProvider } from './metrics/MeterProvider.ts';
 export {
   ValueType,
   Counter,
@@ -54,12 +54,12 @@ export {
   MetricAttributes,
   MetricAttributeValue,
   ObservableCallback,
-} from './metrics/Metric';
+} from './metrics/Metric.ts';
 export {
   BatchObservableResult,
   ObservableResult,
-} from './metrics/ObservableResult';
-export type { MetricsAPI } from './api/metrics';
+} from './metrics/ObservableResult.ts';
+export type { MetricsAPI } from './api/metrics.ts';
 
 // Propagation APIs
 export {
@@ -68,46 +68,46 @@ export {
   TextMapGetter,
   defaultTextMapGetter,
   defaultTextMapSetter,
-} from './propagation/TextMapPropagator';
-export type { PropagationAPI } from './api/propagation';
+} from './propagation/TextMapPropagator.ts';
+export type { PropagationAPI } from './api/propagation.ts';
 
 // Trace APIs
-export { SpanAttributes, SpanAttributeValue } from './trace/attributes';
-export { Link } from './trace/link';
-export { ProxyTracer, TracerDelegator } from './trace/ProxyTracer';
-export { ProxyTracerProvider } from './trace/ProxyTracerProvider';
-export { Sampler } from './trace/Sampler';
-export { SamplingDecision, SamplingResult } from './trace/SamplingResult';
-export { SpanContext } from './trace/span_context';
-export { SpanKind } from './trace/span_kind';
-export { Span } from './trace/span';
-export { SpanOptions } from './trace/SpanOptions';
-export { SpanStatus, SpanStatusCode } from './trace/status';
-export { TraceFlags } from './trace/trace_flags';
-export { TraceState } from './trace/trace_state';
-export { createTraceState } from './trace/internal/utils';
-export { TracerProvider } from './trace/tracer_provider';
-export { Tracer } from './trace/tracer';
-export { TracerOptions } from './trace/tracer_options';
+export { SpanAttributes, SpanAttributeValue } from './trace/attributes.ts';
+export { Link } from './trace/link.ts';
+export { ProxyTracer, TracerDelegator } from './trace/ProxyTracer.ts';
+export { ProxyTracerProvider } from './trace/ProxyTracerProvider.ts';
+export { Sampler } from './trace/Sampler.ts';
+export { SamplingDecision, SamplingResult } from './trace/SamplingResult.ts';
+export { SpanContext } from './trace/span_context.ts';
+export { SpanKind } from './trace/span_kind.ts';
+export { Span } from './trace/span.ts';
+export { SpanOptions } from './trace/SpanOptions.ts';
+export { SpanStatus, SpanStatusCode } from './trace/status.ts';
+export { TraceFlags } from './trace/trace_flags.ts';
+export { TraceState } from './trace/trace_state.ts';
+export { createTraceState } from './trace/internal/utils.ts';
+export { TracerProvider } from './trace/tracer_provider.ts';
+export { Tracer } from './trace/tracer.ts';
+export { TracerOptions } from './trace/tracer_options.ts';
 export {
   isSpanContextValid,
   isValidTraceId,
   isValidSpanId,
-} from './trace/spancontext-utils';
+} from './trace/spancontext-utils.ts';
 export {
   INVALID_SPANID,
   INVALID_TRACEID,
   INVALID_SPAN_CONTEXT,
-} from './trace/invalid-span-constants';
-export type { TraceAPI } from './api/trace';
+} from './trace/invalid-span-constants.ts';
+export type { TraceAPI } from './api/trace.ts';
 
 // Split module-level variable definition into separate files to allow
 // tree-shaking on each api instance.
-import { context } from './context-api';
-import { diag } from './diag-api';
-import { metrics } from './metrics-api';
-import { propagation } from './propagation-api';
-import { trace } from './trace-api';
+import { context } from './context-api.ts';
+import { diag } from './diag-api.ts';
+import { metrics } from './metrics-api.ts';
+import { propagation } from './propagation-api.ts';
+import { trace } from './trace-api.ts';
 
 // Named export.
 export { context, diag, metrics, propagation, trace };

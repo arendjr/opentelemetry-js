@@ -14,9 +14,9 @@
  * limitations under the License.
  */
 
-import * as assert from 'assert';
-import { NoopTracer } from '../../../src/trace/NoopTracer';
-import { NoopTracerProvider } from '../../../src/trace/NoopTracerProvider';
+import * as assert from 'node:assert';
+import { NoopTracer } from '../../../src/trace/NoopTracer.ts';
+import { NoopTracerProvider } from '../../../src/trace/NoopTracerProvider.ts';
 
 describe('NoopTracerProvider', () => {
   it('should not crash', () => {

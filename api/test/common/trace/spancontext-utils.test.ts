@@ -14,9 +14,9 @@
  * limitations under the License.
  */
 
-import * as assert from 'assert';
-import * as context from '../../../src/trace/spancontext-utils';
-import { INVALID_SPANID, INVALID_TRACEID, TraceFlags } from '../../../src';
+import * as assert from 'node:assert';
+import * as context from '../../../src/trace/spancontext-utils.ts';
+import { INVALID_SPANID, INVALID_TRACEID, TraceFlags } from '../../../src/index.ts';
 
 describe('spancontext-utils', () => {
   it('should return true for valid spancontext', () => {

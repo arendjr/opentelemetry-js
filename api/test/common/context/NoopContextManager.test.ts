@@ -14,9 +14,9 @@
  * limitations under the License.
  */
 
-import * as assert from 'assert';
-import { createContextKey, ROOT_CONTEXT } from '../../../src/context/context';
-import { NoopContextManager } from '../../../src/context/NoopContextManager';
+import * as assert from 'node:assert';
+import { createContextKey, ROOT_CONTEXT } from '../../../src/context/context.ts';
+import { NoopContextManager } from '../../../src/context/NoopContextManager.ts';
 
 describe('NoopContextManager', () => {
   let contextManager: NoopContextManager;

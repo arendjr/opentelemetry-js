@@ -16,6 +16,6 @@
 
 // Split module-level variable definition into separate files to allow
 // tree-shaking on each api instance.
-import { ContextAPI } from './api/context';
+import { ContextAPI } from './api/context.ts';
 /** Entrypoint for context API */
 export const context = ContextAPI.getInstance();
